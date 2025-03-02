@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Quick Search",
+  "version": "1.0",
+  "description": "Setzt den Fokus auf die YouTube-Suchleiste, wenn '/' gedrückt wird.",
+  "permissions": ["scripting"],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
